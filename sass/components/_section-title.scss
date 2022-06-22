@@ -1,0 +1,6 @@
+.section__title {
+  text-align: center;
+  @include font(700, 36px, 42px);
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
