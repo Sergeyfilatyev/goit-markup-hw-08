@@ -45,11 +45,9 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .section--user-background {
   background-color: #f5f4fa;
 }
-
 .section--no-padding-top {
   padding-top: 0;
 }
@@ -181,11 +179,11 @@ a {
   color: #2196f3;
 }
 
-.nave-menu__link--active {
+.nav-menu__link--active {
   position: relative;
   color: #2196f3;
 }
-.nave-menu__link--active::after {
+.nav-menu__link--active::after {
   content: "";
   display: block;
   position: absolute;
