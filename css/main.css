@@ -346,7 +346,7 @@ a {
   margin-right: auto;
   background-color: #2f303a;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundimage.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/backgroundimage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
