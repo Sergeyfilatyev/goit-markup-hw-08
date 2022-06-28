@@ -1,8 +1,3 @@
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .features-list__box {
   display: flex;
   justify-content: center;
@@ -18,15 +13,34 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-color;
-}
-.features-list__item {
-  width: calc((100% - 90px) / 4);
-  &:not(:nth-child(4n)) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 }
 
 .features-list__text {
   @include font(400, 14px, 24px);
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 1199px) {
+    .features-list__item {
+      width: calc((100% - 30px) / 2);
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
