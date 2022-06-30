@@ -461,11 +461,6 @@ a {
   text-transform: uppercase;
   color: #212121;
 }
-@media screen and (max-width: 767px) {
-  .features-list__title {
-    text-align: center;
-  }
-}
 
 .features-list__text {
   font-weight: 400;
@@ -474,6 +469,18 @@ a {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list__title {
+    text-align: center;
+  }
+
+  .features-list__item {
+    width: 100%;
+  }
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
@@ -486,6 +493,9 @@ a {
   }
   .features-list__item:not(:nth-child(2n)) {
     margin-right: 30px;
+  }
+  .features-list__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -979,8 +989,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1016,6 +1024,19 @@ a {
   fill: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .backdrop__modal {
+    width: 93%;
+    max-width: 450px;
+    max-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal-form {
   padding: 40px;
   display: flex;
@@ -1025,9 +1046,6 @@ a {
 .modal-form__title {
   margin-bottom: 12px;
   text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -1148,17 +1166,11 @@ a {
 
 .modal-agreement {
   margin-left: 8px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
 .modal-agreement__link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: underline;
@@ -1182,4 +1194,43 @@ a {
 }
 .modal-form__btn:focus, .modal-form__btn:hover {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .modal-agreement {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+
+  .modal-agreement__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .modal-agreement {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+
+  .modal-agreement__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }/*# sourceMappingURL=main.css.map */

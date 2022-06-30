@@ -13,14 +13,22 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-color;
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
 }
 
 .features-list__text {
   @include font(400, 14px, 24px);
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 767px) {
+  .features-list__title {
+    text-align: center;
+  }
+  .features-list__item {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .features-list {
@@ -32,6 +40,9 @@
       width: calc((100% - 30px) / 2);
       &:not(:nth-child(2n)) {
         margin-right: 30px;
+      }
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
       }
     }
   }
