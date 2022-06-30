@@ -1,5 +1,6 @@
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,12 +28,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 250ms $cubic-beizer-hover, opacity 250ms $cubic-beizer-hover,
-      visibility 250ms $cubic-beizer-hover;
+    transition: transform 250ms $cubic-beizer-hover;
     .is-open & {
       transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-      visibility: visible;
     }
   }
 

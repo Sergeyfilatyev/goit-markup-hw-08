@@ -36,6 +36,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-btn" data-menu-open>
+          <svg class="mobile-btn__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contact-header">
           <li class="contact-header__item">
             <a href="mailto:info@devstudio.com" class="contact-header__link"
@@ -52,6 +57,63 @@
             >
           </li>
         </ul>
+      </div>
+
+      <!-- Mobile-menu -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-head">
+            <ul class="mobile-nav">
+              <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link">Студия </a>
+              </li>
+
+              <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link">Портфолио </a>
+              </li>
+
+              <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link">Контакты </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-foot">
+            <ul class="mobile-contact">
+              <li class="mobile-contact__item">
+                <a href="tel:+380961111111" class="mobile-contact__link mobile-contact__link--phone"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contact__link mobile-contact__link--mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a href="https://www.instagram.com/" class="mobile-social__link">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="https://twitter.com/" class="mobile-social__link">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="https://www.facebook.com/" class="mobile-social__link">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="https://www.linkedin.com/" class="mobile-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!--Main container-->
@@ -83,7 +145,50 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img class src="./images/technocrack.jpg" alt="Технокрак" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrack-dekstop.webp    1x,
+                        ./images/portfolio/technocrack-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrack-dekstop.jpg    1x,
+                        ./images/portfolio/technocrack-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrack-tablet.webp    1x,
+                        ./images/portfolio/technocrack-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrack-tablet.jpg    1x,
+                        ./images/portfolio/technocrack-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrack-mobile.webp    1x,
+                        ./images/portfolio/technocrack-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrack-mobile.jpg    1x,
+                        ./images/portfolio/technocrack-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img src="./images/portfolio/technocrack-mobile.jpg" alt="Технокряк"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -101,7 +206,52 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img class src="./images/posterbasketball.jpg" alt="Баскетбол" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/posterbasketball-dekstop.webp    1x,
+                        ./images/portfolio/posterbasketball-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/posterbasketball-dekstop.jpg    1x,
+                        ./images/portfolio/posterbasketball-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/posterbasketball-tablet.webp    1x,
+                        ./images/portfolio/posterbasketball-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/posterbasketball-tablet.jpg    1x,
+                        ./images/portfolio/posterbasketball-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/posterbasketball-mobile.webp    1x,
+                        ./images/portfolio/posterbasketball-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/posterbasketball-mobile.jpg    1x,
+                        ./images/portfolio/posterbasketball-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/posterbasketball-mobile.jpg"
+                      alt="Новый орлеан постер баскетбол"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -119,7 +269,50 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img class src="./images/seafood.jpg" alt="Ресторан морепродукты" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-dekstop.webp    1x,
+                        ./images/portfolio/seafood-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-dekstop.jpg    1x,
+                        ./images/portfolio/seafood-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tablet.webp    1x,
+                        ./images/portfolio/seafood-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tablet.jpg    1x,
+                        ./images/portfolio/seafood-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mobile.webp    1x,
+                        ./images/portfolio/seafood-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mobile.jpg    1x,
+                        ./images/portfolio/seafood-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img src="./images/portfolio/seafood-mobile.jpg" alt="Ресторан Морепродукты"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -137,7 +330,50 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img class src="./images/prime.jpg" alt="Наушники" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-dekstop.webp    1x,
+                        ./images/portfolio/prime-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-dekstop.jpg    1x,
+                        ./images/portfolio/prime-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tablet.webp    1x,
+                        ./images/portfolio/prime-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tablet.jpg    1x,
+                        ./images/portfolio/prime-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mobile.webp    1x,
+                        ./images/portfolio/prime-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mobile.jpg    1x,
+                        ./images/portfolio/prime-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img src="./images/portfolio/prime-mobile.jpg" alt="Проект Прайм"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -155,7 +391,50 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img class src="./images/boxes.jpg" alt="Коробки" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-dekstop.webp    1x,
+                        ./images/portfolio/boxes-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-dekstop.jpg    1x,
+                        ./images/portfolio/boxes-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tablet.webp    1x,
+                        ./images/portfolio/boxes-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tablet.jpg    1x,
+                        ./images/portfolio/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mobile.webp    1x,
+                        ./images/portfolio/boxes-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mobile.jpg    1x,
+                        ./images/portfolio/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img src="./images/portfolio/boxes-mobile.jpg" alt="Проект Боксис"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -173,12 +452,52 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img
-                    class
-                    src="./images/inspirationnoboders.jpg"
-                    alt="Вдохновение не имеет границ"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/inspirationnoboders-dekstop.webp    1x,
+                        ./images/portfolio/inspirationnoboders-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspirationnoboders-dekstop.jpg    1x,
+                        ./images/portfolio/inspirationnoboders-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/inspirationnoboders-tablet.webp    1x,
+                        ./images/portfolio/inspirationnoboders-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspirationnoboders-tablet.jpg    1x,
+                        ./images/portfolio/inspirationnoboders-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/inspirationnoboders-mobile.webp    1x,
+                        ./images/portfolio/inspirationnoboders-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/inspirationnoboders-mobile.jpg    1x,
+                        ./images/portfolio/inspirationnoboders-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/inspirationnoboders-mobile.jpg"
+                      alt="Вдохновение не имеет границ"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -196,12 +515,52 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img
-                    class
-                    src="./images/limitededition.jpg"
-                    alt="Издание Limited edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/limitededition-dekstop.webp    1x,
+                        ./images/portfolio/limitededition-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/limitededition-dekstop.jpg    1x,
+                        ./images/portfolio/limitededition-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/limitededition-tablet.webp    1x,
+                        ./images/portfolio/limitededition-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/limitededition-tablet.jpg    1x,
+                        ./images/portfolio/limitededition-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/limitededition-mobile.webp    1x,
+                        ./images/portfolio/limitededition-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/limitededition-mobile.jpg    1x,
+                        ./images/portfolio/limitededition-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/limitededition-mobile.jpg"
+                      alt="Издание ограниченный выпуск"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -219,7 +578,50 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img class src="./images/projectlab.jpg" alt="Проект LAB" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/projectlab-dekstop.webp    1x,
+                        ./images/portfolio/projectlab-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/projectlab-dekstop.jpg    1x,
+                        ./images/portfolio/projectlab-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projectlab-tablet.webp    1x,
+                        ./images/portfolio/projectlab-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/projectlab-tablet.jpg    1x,
+                        ./images/portfolio/projectlab-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/projectlab-mobile.webp    1x,
+                        ./images/portfolio/projectlab-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/projectlab-mobile.jpg    1x,
+                        ./images/portfolio/projectlab-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img src="./images/portfolio/projectlab-mobile.jpg" alt="Проект Лаб"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -237,7 +639,50 @@
             <li class="projects__item">
               <a class="projects__link" href="/"
                 ><div class="projects__thumb">
-                  <img class src="./images/growingbusines.jpg" alt="Растущий бизнес" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/growingbusines-dekstop.webp    1x,
+                        ./images/portfolio/growingbusines-dekstop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/growingbusines-dekstop.jpg    1x,
+                        ./images/portfolio/growingbusines-dekstop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/growingbusines-tablet.webp    1x,
+                        ./images/portfolio/growingbusines-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/growingbusines-tablet.jpg    1x,
+                        ./images/portfolio/growingbusines-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/growingbusines-mobile.webp    1x,
+                        ./images/portfolio/growingbusines-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio/growingbusines-mobile.jpg    1x,
+                        ./images/portfolio/growingbusines-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img src="./images/portfolio/growingbusines-mobile.jpg" alt="Растущий бизнес"
+                  /></picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -354,5 +799,7 @@
         </form>
       </div>
     </footer>
+    <!-- script-js -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
