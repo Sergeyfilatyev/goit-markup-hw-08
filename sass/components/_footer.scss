@@ -110,14 +110,11 @@
   .footer__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
   }
 
   @media screen and (max-width: 1199px) {
-    .join {
-      margin-left: 165px;
-    }
     .footer-form__input {
       width: 450px;
     }

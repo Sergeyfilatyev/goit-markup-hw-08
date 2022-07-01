@@ -1,6 +1,6 @@
 body {
-  background-color: var(--background-primary-color);
-  color: var(--main-color);
+  background-color: $background-primary-color;
+  color: $main-color;
   font-family: 'Roboto', sans-serif;
 }
 ul {

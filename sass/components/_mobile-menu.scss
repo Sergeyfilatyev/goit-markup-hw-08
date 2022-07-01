@@ -74,7 +74,11 @@
     &:focus {
       color: $accent-color;
     }
+    &--active {
+      color: $accent-color;
+    }
   }
+
   .mobile-contact__item:not(:last-child) {
     margin-bottom: 32px;
   }
