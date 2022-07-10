@@ -1146,7 +1146,6 @@ a {
   .backdrop__modal {
     width: 93%;
     max-width: 450px;
-    max-height: 100vh;
   }
 }
 @media screen and (min-width: 1200px) {
